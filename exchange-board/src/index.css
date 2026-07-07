@@ -387,13 +387,32 @@ a {
 
 /* ---------- Responsive ---------- */
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .page__main {
+    padding: 32px 16px 48px;
+  }
+
   .page__title {
     font-size: 32px;
   }
 
   .converter-card {
     padding: 20px;
+  }
+
+  .converter-card__row--pair {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+  }
+
+  .converter-card__swap {
+    align-self: center;
+    transform: rotate(90deg);
+  }
+
+  .converter-card__swap:hover {
+    transform: rotate(270deg);
   }
 
   .converter-card__figure {
